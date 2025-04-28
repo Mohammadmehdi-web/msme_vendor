@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PMEGP Financial Assistance Form</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background: #f8f9fa;
+    }
+    .cnfm_body{
+      background-color: #2d2556;
+    }
+    .vendor-container {
+      background: rgba(255, 255, 255, 0.863);
+      padding: 30px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 1300px;
+    }
+    .logo-tag{
+      display: flex;
+      justify-content: space-between;
+    }
+    .ven-heading {
+      text-align: center;
+      margin-bottom: 30px;
+      font-weight: 600;
+    }
+    .vendor-container form{
+      padding: 10px;
+      border-radius: 10px;
+      border: 2px solid #fc9729;;
+    }
+    .form-control{
+      padding: 10px !important;
+          border-radius: 10px;
+    }
+    .applicant-id-section {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+    }
+    .applicant-id-section .left {
+      font-weight: 600;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .notes {
+      background: #e9ecef;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .submit-button {
+      text-align: center;
+    }
+    @media (max-width: 700px){
+      .vendor-container{
+        padding: 10px;
+        
+
+      }
+      .logo-tag{
+        flex-wrap: wrap;
+        justify-content: center !important;
+      }
+      
+    }
+  </style>
+</head>
+<body class="cnfm_body">
+
+<div class="vendor-container">
+  <div class="logo-tag">
+    <img src="./images/msme-logo.png" alt="logo" srcset="" height="120px">
+    <img src="./images/msme-tag.png" alt="tagline" srcset="" width="300px" style="object-fit: contain;">
+  </div>
+
+  <!-- <div class="applicant-id-section">
+    <div class="left">
+      APPLICANT ID:
+      <input type="text" class="form-control d-inline-block w-auto" required>
+    </div>
+    <div class="right">
+      (OFFICE USE)
+    </div>
+  </div> -->
+
+  <h2 class="ven-heading mt-5">APPLICATION FORM FOR FINANCIAL ASSISTANCE UNDER PRIME MINISTER'S EMPLOYMENT GENERATION PROGRAMME (PMEGP)</h2>
+
+  <form  method="post" action="https://script.google.com/macros/s/AKfycbwMWG0_kPmBywAOS5RUbIVzZjdzwykpYR1Ms_-QovS3i8U_yHWcCidsMGr-Y1vn8nfg/exec">
+
+    <!-- Preference Section -->
+    <div class="mb-4">
+      <label class="form-label fw-bold">Preference for sponsoring agency of the project to Bank: <span class="text-danger">*</span></label>
+      <div class="row" required >
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="preference" id="kvic" value="KVIC" required> KVIC</div>
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="preference" id="kvib" value="KVIB" required> KVIB</div>
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="preference" id="dic" value="Dic" required> DIC</div>
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="preference" id="rural" value="Rural" required> Rural</div>
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="preference" id="urban" value="Urban" required> Urban</div>
+      </div>
+      
+    </div>
+
+    <!-- To Section -->
+    <div class="mb-3">
+      <label class="form-label">To: <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" name="to" required>
+    </div>
+
+    <!-- Name & DOB -->
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Name of the applicant/ Institution Name: <span class="text-danger">*</span></label>
+        <input type="text" class="form-control" name="applicant_name" placeholder="Enter name" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label class="form-label">Date of Birth: <span class="text-danger">*</span></label>
+        <input type="date" class="form-control" name="dob" required>
+      </div>
+    </div>
+
+    <!-- Sex -->
+    <div class ="row">
+        <div class="col-md-6 mb-3">
+            <label class="form-label">Sex: <span class="text-danger">*</span></label><br>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sex" id="male" value="Male" required>
+              <label class="form-check-label" for="male">Male</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="sex" id="female" value="Male" required>
+              <label class="form-check-label" for="female">Female</label>
+            </div>
+          </div>
+      
+          <!-- Father's Name -->
+          <div class="col-md-6 mb-3">
+            <label class="form-label">Father’s Name/Spouse’s Name/Contact Person Name (if Institution): <span class="text-danger">*</span></label>
+            <input type="text" class="form-control" name="fathers_name" required>
+          </div>
+    </div>
+
+    <!-- Communication Address -->
+    <div class="mb-3">
+      <label class="form-label">Communication Address: <span class="text-danger">*</span></label>
+      <textarea class="form-control mb-2" name="communication_address" rows="2" required></textarea>
+      <div class="row g-2">
+        <div class="col-md-3"><input type="text" class="form-control" name="taluk_block" value="Taluk_block" placeholder="Taluk/Block" required></div>
+        <div class="col-md-3"><input type="text" class="form-control" name="district" value="District" placeholder="District" required></div>
+        <div class="col-md-3"><input type="email" class="form-control" name="email" value="Email" placeholder="Email" required></div>
+        <div class="col-md-3"><input type="number" class="form-control" name="contact_no" value="Contact_no" placeholder="Contact No" required></div>
+      </div>
+    </div>
+
+    <!-- Proposed Location -->
+    <div class="mb-3">
+      <label class="form-label">Address of proposed location of unit: <span class="text-danger">*</span></label>
+      <div class="row mb-2">
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="proposed_location"  id="rural" value="Rural" required> Rural</div>
+        <div class="col-md-2"><input class="form-check-input" type="radio" name="proposed_location" id="`urban" value="Urban" required> Urban</div>
+      </div>
+      <div class="row g-2">
+        <div class="col-md-6"><input type="text" class="form-control" name="proposed_taluk_block" placeholder="Taluk/Block" required></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="proposed_district" placeholder="District" required></div>
+      </div>
+    </div>
+
+    <!-- Bank Details -->
+    <div class="mb-3">
+      <label class="form-label">Name of the preferred Bank Name & Address in the area for Project sanction: <span class="text-danger">*</span></label>
+      <div class="row g-2">
+        <div class="col-md-6"><input type="text" class="form-control" name="bank_name" placeholder="Bank Name" required></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="bank_address" placeholder="Address" required></div>
+        <div class="col-md-4"><input type="text" class="form-control" name="bank_taluk_block" placeholder="Taluk/Block" required></div>
+        <div class="col-md-4"><input type="text" class="form-control" name="bank_district" placeholder="District" required></div>
+        <div class="col-md-4"><input type="text" class="form-control" name="bank_branch_code" placeholder="Branch Code" required></div>
+      </div>
+    </div>
+
+    <!-- Qualification -->
+    <div class="mb-3">
+      <label class="form-label">Qualification: <span class="text-danger">*</span></label>
+      <div class="row g-2">
+        <div class="col-md-6"><input type="text" class="form-control" name="academic_qualification" placeholder="Academic" required></div>
+        <div class="col-md-6"><input type="text" class="form-control" name="technical_qualification" placeholder="Technical" required></div>
+      </div>
+    </div>
+
+    <!-- EDP Training -->
+    <div class="mb-3">
+      <label class="form-label">Whether Entrepreneur Development Programme (EDP) undergone: <span class="text-danger">*</span></label><br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="edp" id="edp-yes" value="Edp-yes" required>
+        <label class="form-check-label" for="edp-yes">Yes</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="edp" id="edp-no" value="Edp-no" required>
+        <label class="form-check-label" for="edp-no">No</label>
+      </div>
+      <input type="text" class="form-control mt-2" name="edp_training_institute" placeholder="Name & Address of Training Institute" required>
+      <div class="row g-2 mt-2">
+        <div class="col-md-4"><input type="text" class="form-control" name="edp_training_from" placeholder="Training From" required></div>
+        <div class="col-md-4"><input type="text" class="form-control" name="edp_training_to" placeholder="Training To" required></div>
+        <div class="col-md-4"><input type="text" class="form-control" name="edp_certificate_date" placeholder="Certificate Issue Date" required></div>
+      </div>
+    </div>
+
+    <!-- Category -->
+    <div class="mb-3">
+      <label class="form-label">Whether the applicant belongs to: <span class="text-danger">*</span></label>
+      <div class="row">
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="sc" value="Sc" required> SC</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="st" value="St" required>  ST</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="obc" value="Obc" required> OBC</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="phc" value="Phc" required>  PHC</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="ex_serviceman" value="Ex-Serviceman" required> Ex-Serviceman</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="minority" value="Minority" required> Minority</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="hill_boarder" value="Hill_boarder" required> Hill Boarder Area</div>
+        <div class="col-md-3"><input class="form-check-input" type="radio" name="category" id="general" value="General" required> General</div>
+      </div>
+    </div>
+
+    <!-- Project Type -->
+    <div class="mb-3">
+      <label class="form-label">Project Type: <span class="text-danger">*</span></label><br>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="project_type" id="manufacturing" value="Manufacturing" required>
+        <label class="form-check-label" for="manufacturing">Manufacturing Unit</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="project_type" id="service" value="Service" required>
+        <label class="form-check-label" for="service">Business/Service Unit</label>
+      </div>
+    </div>
+
+    <!-- Project Name -->
+    <div class="mb-3">
+      <label class="form-label">Name of project/business activity proposed: <span class="text-danger">*</span></label>
+      <input type="text" class="form-control" name="project_name" required>
+    </div>
+
+    <!-- Loan Amount -->
+    <div class="mb-3">
+      <label class="form-label">Amount of loan required (in Rs.): <span class="text-danger">*</span></label>
+      <div class="row g-2">
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_building_type" placeholder="Building Type (own/leased/rented)" required></div>
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_work_shed" placeholder="Work Shed/Building" required></div>
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_machinery" placeholder="Machinery & Equipment" required></div>
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_preoperative_cost" placeholder="Pre-operative Cost" required></div>
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_working_capital" placeholder="Working Capital/Cash Credit Limit" required></div>
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_total" placeholder="Total" required></div>
+      </div>
+    </div>
+
+    <!-- Loan Details -->
+    <div class="mb-3">
+      <label class="form-label">Details of earlier or current Loan/Grant/Subsidy availed from Central/state Govt. Scheme/or any other similar scheme:</label>
+      <div class="row g-2">
+        <div class="col-md-4"><input type="text" class="form-control" name="loan_activity" placeholder="Activity of the Project with Amount(in Rs.)" required></div>
+        <div class="col-md-4"><input type="number" class="form-control" name="loan_year_sanction" placeholder="Year of Sanction" required></div>
+        <div class="col-md-4"><input type="text" class="form-control" name="loan_address" placeholder="Address" required></div>
+      </div>
+    </div>
+
+    <!-- Date & Signature -->
+    <div class="row g-2">
+      <div class="col-md-6">
+        <label class="form-label">Date: <span class="text-danger">*</span></label>
+        <input type="date" class="form-control" name="application_date" required>
+      </div>
+      <div class="col-md-6">
+        <label class="form-label">Signature of the Applicant: <span class="text-danger">*</span></label>
+        <input type="file" class="form-control" name="signature_file"  accept=".jpg,.jpeg,.png,.pdf" required>
+      </div>
+    </div>
+
+    <!-- Notes -->
+    <div class="notes">
+      <h5>NOTE:</h5>
+      <ul>
+        <li>Own contribution must be 5% for SC/ST/OBC/PHC/Women/Ex-Servicemen/North East Reason/Hill Boarder Area and 10% for General and 10% for General.</li>
+        <li>Total project cost should not exceed ₹25 lakhs for Manufacturing unit and ₹10 lakhs Business/Service unit.</li>
+        <li> Applicant will not be entitled for additional Margin Money(Subsidy) in case of Own Contribution over and above the prescribed limit.</li>
+        <li>VIIIth pass for Manufacturing Unit above Rs.10 lakhs project cost and under Service Sector above Rs.5 lakhs</li>
+        <li>Application should be submitted complete in all respect along with attested copies of the following documents:
+          <ul>
+            <li>Certificate of qualification-academic and technical (if project cost above 5 lakhs under business/service industry or above 10 lakhs under Manufacturing industry)</li>
+            <li>Relevant Certificate for SC/ST/OBC/Minority/Ex-Servicemen/PHC</li>
+            <li>If Entrepreneur Development programme(EDP) training undergone (at least for two weeks) then submit photocopy of the certificate</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Official Use -->
+    <div class="mb-3 mt-4">
+      <label class="form-label">For Official Use Only (Rejected/ to be placed before District Task Force Committee) Reasons:</label>
+      <div class="row g-2">
+        <div class="col-md-6"><input type="text" class="form-control" name="official_place" placeholder="Place" required></div>
+        <div class="col-md-6"><input type="date" class="form-control" name="official_date" required></div>
+      </div>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="submit-button mt-4">
+        <button type="submit" value="submit" id="submit" class="btn btn-primary px-5 py-2">Submit</button>
+      </div>
+
+  </form>
+
+</div>
+<script>
+  const form = document.querySelector("form");
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+  
+  const formData = new FormData(form);
+  const plainFormData = Object.fromEntries(formData.entries());
+
+  const response = await fetch(form.action, {
+    method: form.method,
+    body: formData,
+  });
+
+  if (response.ok) {
+    alert('Form submitted successfully!');
+    form.reset();
+  } else {
+    alert('There was an error submitting the form.');
+  }
+});
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="google-sheet.js"></script>
+
+</body>
+</html>
